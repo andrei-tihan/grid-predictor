@@ -1,0 +1,27 @@
+# Alberta Grid Balance Predictor — Capstone Project
+By Andrei Tihan
+
+This self-directed capstone project for the Machine Learning and AI Certificate bootcamp focuses on predicting the grid balance in Alberta, Canada, using historical data and machine learning techniques. The goal is to forecast the difference between electricity supply and demand, which is crucial for maintaining grid stability and optimizing energy resources. It aims to give the user a simple breakdown of the predicted balance at a given hour on a given day, as well as a short recommendation of consumption behaviour for the user (ex. charge EVs or do laundry at this time). In this project, I used various data sources, including electricity consumption in the form of Alberta Internal Load data from the AESO, and generation data from renewable and non-renewable sources, also from the AESO.
+
+Thanks for checking out my project! If you have any questions or feedback, feel free to reach out.
+
+## Quickstart
+1. Create venv and install deps:
+python -m venv venv
+source venv/bin/activate # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+
+2. Put AESO CSVs in `data/raw/`:
+- `alberta_net_generation.csv`
+- `alberta_internal_load.csv`
+
+3. Run training pipeline (from repo root):
+python -m src.train_pipeline --gen data/raw/alberta_net_generation.csv --load data/raw/alberta_internal_load.csv
+
+This writes `data/processed/alberta_hourly_clean.csv`, `data/processed/predictions.csv`, and `models/*`.
+
+4. Run dashboard:
+streamlit run app/app.py
+
+This provides a simple UI to interact with the model and visualize predictions. Currently, this only supports predicting the grid balance for a given hour on a given day for the test set.

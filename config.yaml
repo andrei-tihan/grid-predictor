@@ -1,0 +1,11 @@
+tz: "America/Edmonton"
+test_days: 90
+lags: [1, 24, 168]
+rolls: [24, 168]
+neutral_k: 0.25
+high_k: 0.75
+models:
+  regressor: "ann"
+  classifier: "rf"
+  ann_backend: "auto"
+n_clusters_daily: 3
