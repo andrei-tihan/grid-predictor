@@ -1,17 +1,19 @@
 # Alberta Grid Balance Predictor Capstone Project
 By Andrei Tihan, September 2025
 
-This self-directed capstone project for the University of Calgary Machine Learning and AI Certificate focuses on predicting the grid balance in Alberta, Canada, using historical data and machine learning techniques. The goal is to forecast the difference between electricity supply and demand, which is crucial for maintaining grid stability and optimizing energy resources. It aims to give the user a simple breakdown of the predicted balance at a given hour on a given day, as well as a short recommendation of consumption behaviour for consumers and utilities (ex. charge EVs or do laundry at this time, activate Demand Response contingenies). In this project, I used various data sources, including electricity consumption in the form of Alberta Internal Load (AIL) data from the AESO, and generation data from renewable and non-renewable sources, also from the AESO.
+This self-directed capstone project for the University of Calgary Machine Learning and AI Certificate focuses on predicting the grid balance in Alberta, Canada, using historical data and machine learning techniques. The goal is to forecast the difference between electricity supply and demand, which is crucial for maintaining grid stability and optimizing energy resources. This is my first major machine learning and AI project, where I wanted to bridge my passion for energy and sustainability with my interest in harnessing data and AI for a better energy future.
+
+It aims to give the user a simple breakdown of the predicted balance at a given hour on a given day, as well as a short recommendation of consumption behaviour for consumers and utilities (ex. charge EVs or do laundry at this time, activate Demand Response contingenies). In this project, I used various data sources, including electricity consumption in the form of Alberta Internal Load (AIL) data from the AESO, and generation data from renewable and non-renewable sources, also from the AESO.
 
 While this is a prototype, it provides an example of how the strategic application of AI can solve our most pressing energy challenges. As renewables continue to increase their share of electricity generation, our grids must become more flexible, intelligent, and responsive to maintain grid stability. The Grid Balance Predictor shows how AI can use past data to inform future behaviour and proactively reduce grid stability risks. It can also reduce the costs of the energy transition by optimizing our existing grid and reduicng the need for physical infrastructure buildout.
 
-## Future development
-A simple AI chatbot the user can interact with to provide personalized recommendations
-Integration of real-time weather data
-Interconnection import and export data
-Grid stability data such as frequency and voltage
-
 Thanks for checking out my project! If you have any questions or feedback, feel free to reach out.
+
+## Future development
+A simple AI chatbot the user can interact with to provide personalized recommendations.
+Integration of real-time weather data.
+Interconnection import and export data.
+Grid stability data such as frequency and voltage.
 
 ## Quickstart
 1. Create venv and install deps:
